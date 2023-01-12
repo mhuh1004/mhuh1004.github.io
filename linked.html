@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        * {
+            box-sizing: border-box;
+          }
+        body {
+            font-family: Kosugi Maru;
+            padding: 10px;
+            background: rgb(255, 236, 247);
+        }
+    </style>
+        <title>☆linked☆</title>
+        <link rel="icon" type="gif/x-icon" href="favicon.gif">
+</head>
+<body>
+    <style>
+       /* Create two unequal columns that floats next to each other */
+        /* left column */
+        .leftcolumn {
+             float:left;
+             width: 30%;
+             padding-left: 20px;
+        }
+       /* right column */
+        .rightcolumn {  
+             float:left;
+             width: 70%;
+             padding-left: 100px;
+             padding-right: 200px;
+             text-align: center;
+        }
+        .rightcolumn h1{
+            color: rgb(0, 0, 0);
+            font-family: Kosugi Maru;
+            font-size: 60px;
+            opacity: 1;
+            text-align: left;
+        }
+        .rightcolumn h2{
+            color: rgb(0, 0, 0);
+            font-family: Kosugi Maru;
+            font-size: 30px;
+            opacity: 1;
+            text-align: left;
+        }
+        .rightcolumn p{
+            color: rgb(0, 0, 0);
+            font-family: Kosugi Maru;
+            font-size: 20px;
+            opacity: 1;
+            text-align: left;
+        }
+        /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 800px) {
+         .leftcolumn, .rightcolumn {   
+             width: 100%;
+             padding: 0;
+            }
+        }
+     /* navbar */
+        .navbar {
+             background-color: #04aa6d00;
+             color: black;
+             font-family: Kosugi Maru;
+             font-size: 20px;
+             border: none;
+        }
+        .navbar h1{
+            color: rgb(0, 0, 0);
+            font-family: Kosugi Maru;
+            font-size: 60px;
+            opacity: 1;
+            text-align: left;
+        }
+        .navbar h2{
+            color: rgb(0, 0, 0);
+            font-family: Kosugi Maru;
+            font-size: 30px;
+            opacity: 1;
+            text-align: left;
+        }
+        .navbar a{
+            color: rgb(0, 0, 0);
+            font-family: Kosugi Maru;
+            font-size: 20px;
+            opacity: 1;
+            text-align: left;
+        }
+        /* Change color on hover */
+        .navbar a:hover {
+             color: rgb(255, 0, 179);
+        }
+     /*dropdown*/
+        .dropbtn {
+             background-color: #04aa6d00;
+             color: black;
+             font-family: Kosugi Maru;
+             font-size: 20px;
+             border: none;
+        }
+        .dropdown {
+             position: relative;
+             display: inline-block;
+        }
+        .dropdown-content {
+             display: none;
+             position: relative;
+             background-color: #abff91;
+             min-width: 160px;
+             z-index: 1;
+        }
+        .dropdown-content a {
+             color: rgb(255, 0, 149);
+             padding: 16px 16px;
+             text-decoration: none;
+             display: block;
+         }
+         .dropdown-content a:hover {background-color:rgb(255, 0, 149);}
+         .dropdown-content a:hover {
+            color:#abff91;
+        }
+         .dropdown:hover .dropdown-content {display: block;}
+         .dropdown:hover .dropbtn {background-color:rgb(255, 0, 149);}
+         .dropbtn a:hover {
+             color: rgb(255, 255, 255);
+         }   
+   /*gallery*/
+        .gallery {
+             margin: 5px;
+             border: 1px solid rgb(0, 13, 255);
+             float: left;
+             width: 700px;
+        }
+        .gallery img {
+             width: 100%;
+             height: 100%;
+             object-fit: cover;
+         }
+        .desc {
+             padding: 15px;
+             text-align: center;
+        }
+        .gallery:hover { 
+            color:white;
+            background-color:rgb(0, 13, 255);
+        }
+    </style>
+     <div class="row">
+         <div class="leftcolumn">
+            <div class="navbar">
+                <h1>Minyoung Huh</h1>
+                <p><button class="navbar"><a href="https://mhuh1004.github.io/home"> <u>.// HOME</u></a></button></p>
+                <p><div class="dropdown">
+                   <button class="dropbtn"><a href="https://mhuh1004.github.io/works"><u>.// WORKS</u></a></button>
+                   <div class="dropdown-content">
+                     <a href="https://mhuh1004.github.io/artdesign">.art/designs</a>
+                     <a href="https://mhuh1004.github.io/event-posters">.event posters</a>
+                     <a href="https://mhuh1004.github.io/projects">.projects</a>
+                     <a href="https://mhuh1004.github.io/doodles">.doodles</a>
+                   </div>
+                 </div>
+                </p>
+                <p><button class="navbar"><a href="https://mhuh1004.github.io/inspo"> <u> .// INSPO</u></a></button></p>
+            </div>
+         </div>
+         <div class="rightcolumn">
+            <h1> a website for "linked," a short film by Abbi Abraham </h1>
+            <p> In the fall of 2022 I worked as a technology production designer for my friend Abbi, who was creating a 
+                short film for her senior thesis at the time. i coded a static website for the thesis that is featured in the film.
+                <br> </br>
+                <br> link to the short film's <a href="https://www.instagram.com/linked.shortfilm/"> instagram</a>, 
+                <a href="https://www.kickstarter.com/projects/linkedtheshortfilm/linked-a-short-film?ref=clipboard-prelaunch"> kickstarter,</a>
+                and Abbi's <a href="https://www.instagram.com/linked.shortfilm/"> website</a> where you can see her other amazing creative projects!
+                <br> </br>
+                <br>"Linked" is an online “meet-cute” that 
+                develops into a deeper connection between the main characters, "GIRL" (played by Beatrix
+                Zander) and "GUY" (played by Jacob Carton). However, the online anonymity presents challenges 
+                to their budding relationship. GIRL ditches a first date after being overcome with a wave of 
+                insecurity, self-loathing, and anxiety. She meets GUY on a online dating site called LINKED 
+                and they hit it off. Soon, he becomes a part of her daily routine, and their chemistry is undeniable.
+                 However, she finally overcomes her isolationary tendencies and tries to take their intimacy to the 
+                 next level and meet in person, he ghosts her. Girl is haunted by thoughts of her perfect match and 
+                 fears he may be a mere mirage, a reflection of her own desires and fears. Just as she puts the past 
+                 behind her, he appears in a way she never imagined. 
+                Was it a dream? Or was it right in her face all along… </br>
+                <br> </br>
+                I was very excited to work on this project as this was the first time working on a film set! Additionally 
+                it was my first opportuinity to hardcode a website using Visual Code Studio. I was tasked to create a
+                dating website that evoked an early 2000s Myspace aesthetic. Below is documentation of the website I made in action!
+            </p>
+            
+            <div class="gallery">
+                <a target="_blank" href="linked1.gif">
+                <img src="linked1.gif"></a>
+                </a>
+                <div class="desc"> Linked 1 (click to see in detail)</div>
+             </div>
+             <div class="gallery">
+                <a target="_blank" href="linked2.gif">
+                <img src="linked2.gif"></a>
+                </a>
+                <div class="desc"> Linked 2 (click to see in detail)</div>
+             </div>
+    </body>
+        

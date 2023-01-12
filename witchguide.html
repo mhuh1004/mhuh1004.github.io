@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        * {
+            box-sizing: border-box;
+          }
+        body {
+            font-family: Kosugi Maru;
+            padding: 10px;
+            background: rgb(255, 236, 247);
+        }
+    </style>
+        <title>☆a witch's guide to herbology☆</title>
+        <link rel="icon" type="gif/x-icon" href="favicon.gif">
+</head>
+<body>
+    <style>
+       /* Create two unequal columns that floats next to each other */
+        /* left column */
+        .leftcolumn {
+             float:left;
+             width: 30%;
+             padding-left: 20px;
+        }
+       /* right column */
+        .rightcolumn {  
+             float:left;
+             width: 70%;
+             padding-left: 100px;
+             padding-right: 200px;
+             text-align: center;
+        }
+        .rightcolumn h1{
+            color: rgb(0, 0, 0);
+            font-family: Kosugi Maru;
+            font-size: 60px;
+            opacity: 1;
+            text-align: left;
+        }
+        .rightcolumn h2{
+            color: rgb(0, 0, 0);
+            font-family: Kosugi Maru;
+            font-size: 30px;
+            opacity: 1;
+            text-align: left;
+        }
+        .rightcolumn p{
+            color: rgb(0, 0, 0);
+            font-family: Kosugi Maru;
+            font-size: 20px;
+            opacity: 1;
+            text-align: left;
+        }
+        /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 800px) {
+         .leftcolumn, .rightcolumn {   
+             width: 100%;
+             padding: 0;
+            }
+        }
+     /* navbar */
+        .navbar {
+             background-color: #04aa6d00;
+             color: black;
+             font-family: Kosugi Maru;
+             font-size: 20px;
+             border: none;
+        }
+        .navbar h1{
+            color: rgb(0, 0, 0);
+            font-family: Kosugi Maru;
+            font-size: 60px;
+            opacity: 1;
+            text-align: left;
+        }
+        .navbar h2{
+            color: rgb(0, 0, 0);
+            font-family: Kosugi Maru;
+            font-size: 30px;
+            opacity: 1;
+            text-align: left;
+        }
+        .navbar a{
+            color: rgb(0, 0, 0);
+            font-family: Kosugi Maru;
+            font-size: 20px;
+            opacity: 1;
+            text-align: left;
+        }
+        /* Change color on hover */
+        .navbar a:hover {
+             color: rgb(255, 0, 179);
+        }
+     /*dropdown*/
+        .dropbtn {
+             background-color: #04aa6d00;
+             color: black;
+             font-family: Kosugi Maru;
+             font-size: 20px;
+             border: none;
+        }
+        .dropdown {
+             position: relative;
+             display: inline-block;
+        }
+        .dropdown-content {
+             display: none;
+             position: relative;
+             background-color: #abff91;
+             min-width: 160px;
+             z-index: 1;
+        }
+        .dropdown-content a {
+             color: rgb(255, 0, 149);
+             padding: 16px 16px;
+             text-decoration: none;
+             display: block;
+         }
+         .dropdown-content a:hover {background-color:rgb(255, 0, 149);}
+         .dropdown-content a:hover {
+            color:#abff91;
+        }
+         .dropdown:hover .dropdown-content {display: block;}
+         .dropdown:hover .dropbtn {background-color:rgb(255, 0, 149);}
+         .dropbtn a:hover {
+             color: rgb(255, 255, 255);
+         }   
+   /*gallery*/
+        .gallery {
+             margin: 5px;
+             border: 1px solid rgb(0, 13, 255);
+             float: left;
+             width: 700px;
+        }
+        .gallery img {
+             width: 100%;
+             height: 100%;
+             object-fit: cover;
+         }
+        .desc {
+             padding: 15px;
+             text-align: center;
+        }
+        .gallery:hover { 
+            color:white;
+            background-color:rgb(0, 13, 255);
+        }
+    </style>
+     <div class="row">
+         <div class="leftcolumn">
+            <div class="navbar">
+                <h1>Minyoung Huh</h1>
+                <p><button class="navbar"><a href="https://mhuh1004.github.io/home"> <u>.// HOME</u></a></button></p>
+                <p><div class="dropdown">
+                   <button class="dropbtn"><a href="https://mhuh1004.github.io/works"><u>.// WORKS</u></a></button>
+                   <div class="dropdown-content">
+                     <a href="https://mhuh1004.github.io/artdesign">.art/designs</a>
+                     <a href="https://mhuh1004.github.io/event-posters">.event posters</a>
+                     <a href="https://mhuh1004.github.io/projects">.projects</a>
+                     <a href="https://mhuh1004.github.io/doodles">.doodles</a>
+                   </div>
+                 </div>
+                </p>
+                <p><button class="navbar"><a href="https://mhuh1004.github.io/inspo"> <u> .// INSPO</u></a></button></p>
+            </div>
+         </div>
+         <div class="rightcolumn">
+            <h1>A Young Witch’s Guide to Herbology</h1>
+            <p> A Young Witch’s Guide to Herbology is a solo journaling RPG adventure and biology/ecology workbook
+                 created by Minyoung Huh and Michelle Seaberg.  It is designed for early elementary school students.  
+                 Players will play as a young witch completing their herbology course.  Activities include outdoor 
+                 exploration, arts and crafts, journaling prompts, and biology review.  Playtime is approximately 45 
+                 minutes, but it can also be played in several sessions over a long period of time.  There is no 
+                 winning or losing.  Players grow their scientific knowledge while cultivating their relationship with 
+                 nature. This game was created for the class "EDST210: Educational Gaming Lab" taught by professor
+                 Camilla Zamboni at Wesleyan University. 
+    
+                <br> Being in charge of the design and user experience aspect of the game, I tried to be as considerate
+                as possible of factors such as the age of our players and being inclusive as possible for all kids. Throughout the 
+                semester, we had read texts on game design and theory such as Jesse Shell's "The Art of Game Design" and 
+                Josè Zagal's and Sebastian Deterding's "Role-playing Game Studies."  </br>
+                <br> <a href="http://camillazamboni.wescreates.wesleyan.edu/egl/fall-2022/a-young-witchs-guide-to-herbology/"> here</a> 
+                is a link to the where the game is posted on the class website, as well as other games made by my classmates. I also included
+                the pdf of the rules and the game itself below. 
+                <br> </br>
+            </p>
+            <iframe src="Final-A-Young-Witchs-Guide-to-Herbology.pdf" width="800px" height="1000px">
+            </iframe>
+            <p><br></br><br></br></p>
+            <iframe src="Rules-A-Young-Witchs-Guide-to-Herbology-1.pdf" width="800px" height="1000px">
+            </iframe>
+            
+            <p>
+                <br></br>
+                <br></br>
+                <br></br>
+            </p>
+</body>
+</html>
+        
