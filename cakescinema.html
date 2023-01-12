@@ -16,70 +16,73 @@
 </head>
 <body>
     <style>
-       /* Create two unequal columns that floats next to each other */
-        /* left column */
-        .leftcolumn {
+         /* Create two unequal columns that floats next to each other */
+    /* left column */
+    .leftcolumn {
              float:left;
              width: 30%;
-             padding-left: 20px;
+        }
+        .leftcolumn img {
+            width: 300px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            margin-left: 5px;
         }
        /* right column */
         .rightcolumn {  
-             float:left;
+             float:right;
              width: 70%;
-             padding-left: 100px;
-             padding-right: 200px;
+             padding-left: 200px;
+             padding-right: 100px;
              text-align: center;
         }
         .rightcolumn h1{
             color: rgb(0, 0, 0);
             font-family: Kosugi Maru;
-            font-size: 60px;
+            font-size: 40px;
             opacity: 1;
             text-align: left;
         }
         .rightcolumn h2{
             color: rgb(0, 0, 0);
             font-family: Kosugi Maru;
-            font-size: 30px;
+            font-size: 20px;
             opacity: 1;
-            text-align: center;
+            text-align: left;
         }
         .rightcolumn p{
             color: rgb(0, 0, 0);
             font-family: Kosugi Maru;
             font-size: 20px;
             opacity: 1;
-            text-align: left;
+            text-align: center;
         }
-        /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-        @media screen and (max-width: 800px) {
-         .leftcolumn, .rightcolumn {   
-             width: 100%;
-             padding: 0;
-            }
+        .rightcolumn a:hover{
+            color:rgb(255, 0, 149);
         }
+
      /* navbar */
-        .navbar {
+     .navbar {
              background-color: #04aa6d00;
              color: black;
              font-family: Kosugi Maru;
              font-size: 20px;
              border: none;
+             padding-left: 80px;
         }
         .navbar h1{
             color: rgb(0, 0, 0);
             font-family: Kosugi Maru;
             font-size: 60px;
             opacity: 1;
-            text-align: left;
+            text-align: center;
         }
         .navbar h2{
             color: rgb(0, 0, 0);
             font-family: Kosugi Maru;
             font-size: 30px;
             opacity: 1;
-            text-align: left;
+            text-align: center;
         }
         .navbar a{
             color: rgb(0, 0, 0);
@@ -99,6 +102,7 @@
              font-family: Kosugi Maru;
              font-size: 20px;
              border: none;
+             margin-left: 73px;
         }
         .dropdown {
              position: relative;
@@ -110,6 +114,7 @@
              background-color: #abff91;
              min-width: 160px;
              z-index: 1;
+             margin-left: 70px;
         }
         .dropdown-content a {
              color: rgb(255, 0, 149);
@@ -128,14 +133,17 @@
          }   
    /*gallery*/
         .gallery {
-             margin: 5px;
-             border: 1px solid rgb(0, 13, 255);
+             margin-left: 5px;
+             margin-bottom: 20px;
+             border: 1px solid rgb(255, 0, 149);
              float: left;
-             width: 500px;
+             width: 48%;
         }
         .gallery img {
              width: 100%;
              height: 300px;
+             margin:auto;
+            
              object-fit: cover;
          }
         .desc {
@@ -144,29 +152,50 @@
         }
         .gallery:hover { 
             color:white;
-            background-color:rgb(0, 13, 255);
+            background-color:rgb(255, 0, 149);
         }
+             /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+             @media screen and (max-width: 800px) {
+         .leftcolumn, .rightcolumn {   
+             width: 100%;
+             padding: 0;
+            }
+        } 
     </style>
      <div class="row">
          <div class="leftcolumn">
             <div class="navbar">
-                <h1>Minyoung Huh</h1>
-                <p><button class="navbar"><a href="https://mhuh1004.github.io/home"> <u>.// HOME</u></a></button></p>
+                <a href="https://mhuh1004.github.io/home"><img src="header.png"></a>
+                <p><button class="navbar"><a href="https://mhuh1004.github.io/home"> <u> ☆ HOME</u></a></button></p>
                 <p><div class="dropdown">
-                   <button class="dropbtn"><a href="https://mhuh1004.github.io/works"><u>.// WORKS</u></a></button>
+                   <button class="dropbtn"><a href="https://mhuh1004.github.io/works"><u> ☆ WORKS</u></a></button>
                    <div class="dropdown-content">
-                     <a href="https://mhuh1004.github.io/projects">.projects</a>
-                     <a href="https://mhuh1004.github.io/artdesign">.art/designs</a>
-                     <a href="https://mhuh1004.github.io/event-posters">.event posters</a>
+                     <a href="https://mhuh1004.github.io/projects"> projects</a>
+                     <a href="https://mhuh1004.github.io/artdesign"> art/designs</a>
+                     <a href="https://mhuh1004.github.io/event-posters"> event posters</a>
+               </p>
                    </div>
                  </div>
                 </p>
-                <p><button class="navbar"><a href="https://mhuh1004.github.io/inspo"> <u> .// INSPO</u></a></button></p>
+                <p> <button class="navbar"><a href="https://mhuh1004.github.io/inspo"> <u>  ☆ INSPO</u></a></button></p>
             </div>
          </div>
          <div class="rightcolumn">
             <h1> Through the Looking Glass </h1>
-            <p> For my class "Digital Foundations," we were asked to use Cinema 4D to create a 
+            <div class="gallery">
+                <a target="_blank" href="projectc.png">
+                <img src="projectc.png"></a>
+                </a>
+                <div class="desc"> Finalized Version (click to see in detail)</div>
+             </div>
+            <div class="gallery">
+                <a target="_blank" href="cake2.png">
+                <img src="cake2.png"></a>
+                </a>
+                <div class="desc"> Plastic Cake Sample (click to see in detail)</div>
+             </div>
+            <p> <br> </br>
+                For my class "Digital Foundations," we were asked to use Cinema 4D to create a 
                 3D render of a still life image. I wanted to touch upon the idea of artificial life and 
                 the flaws of the desires to “eternalize” something by changing what it inherently is. 
                 The glass cakes represent this idea by showing how although they will last forever now 
@@ -180,20 +209,9 @@
                  Although I definitely had troubles with some parts of it, I am proud of the final product and 
                  sparked an interest in rendering art. I also loved playing around with different textures,
                  as shown below with some iterations of the cakes being plastic.
+                 <br> </br>
+                 <br> </br>
             </p>
-
-            <div class="gallery">
-                <a target="_blank" href="projectc.png">
-                <img src="projectc.png"></a>
-                </a>
-                <div class="desc"> Finalized Version</div>
-             </div>
-            <div class="gallery">
-                <a target="_blank" href="cake2.png">
-                <img src="cake2.png"></a>
-                </a>
-                <div class="desc"> Plastic Cake Sample</div>
-             </div>
 
              </body>
             </html>

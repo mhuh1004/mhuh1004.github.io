@@ -16,34 +16,39 @@
 </head>
 <body>
     <style>
-       /* Create two unequal columns that floats next to each other */
-        /* left column */
-        .leftcolumn {
+         /* Create two unequal columns that floats next to each other */
+    /* left column */
+    .leftcolumn {
              float:left;
              width: 30%;
-             padding-left: 20px;
+        }
+        .leftcolumn img {
+            width: 300px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            margin-left: 5px;
         }
        /* right column */
         .rightcolumn {  
              float:left;
              width: 70%;
-             padding-left: 100px;
-             padding-right: 200px;
+             padding-left: 200px;
+             padding-right: 100px;
              text-align: center;
         }
         .rightcolumn h1{
             color: rgb(0, 0, 0);
             font-family: Kosugi Maru;
-            font-size: 60px;
+            font-size: 40px;
             opacity: 1;
             text-align: left;
         }
         .rightcolumn h2{
             color: rgb(0, 0, 0);
             font-family: Kosugi Maru;
-            font-size: 30px;
+            font-size: 20px;
             opacity: 1;
-            text-align: center;
+            text-align: left;
         }
         .rightcolumn p{
             color: rgb(0, 0, 0);
@@ -52,34 +57,32 @@
             opacity: 1;
             text-align: left;
         }
-        /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-        @media screen and (max-width: 800px) {
-         .leftcolumn, .rightcolumn {   
-             width: 100%;
-             padding: 0;
-            }
+        .rightcolumn a:hover{
+            color:rgb(255, 0, 179);
         }
+
      /* navbar */
-        .navbar {
+     .navbar {
              background-color: #04aa6d00;
              color: black;
              font-family: Kosugi Maru;
              font-size: 20px;
              border: none;
+             padding-left: 80px;
         }
         .navbar h1{
             color: rgb(0, 0, 0);
             font-family: Kosugi Maru;
             font-size: 60px;
             opacity: 1;
-            text-align: left;
+            text-align: center;
         }
         .navbar h2{
             color: rgb(0, 0, 0);
             font-family: Kosugi Maru;
             font-size: 30px;
             opacity: 1;
-            text-align: left;
+            text-align: center;
         }
         .navbar a{
             color: rgb(0, 0, 0);
@@ -99,6 +102,7 @@
              font-family: Kosugi Maru;
              font-size: 20px;
              border: none;
+             margin-left: 73px;
         }
         .dropdown {
              position: relative;
@@ -110,6 +114,7 @@
              background-color: #abff91;
              min-width: 160px;
              z-index: 1;
+             margin-left: 70px;
         }
         .dropdown-content a {
              color: rgb(255, 0, 149);
@@ -126,38 +131,31 @@
          .dropbtn a:hover {
              color: rgb(255, 255, 255);
          }   
-   /*gallery*/
-        .gallery {
-             margin: 5px;
-             border: 1px solid rgb(0, 13, 255);
-             float: left;
-             width: 500px;
-        }
-        .gallery img {
+
+           /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+           @media screen and (max-width: 800px) {
+         .leftcolumn, .rightcolumn {   
              width: 100%;
-             height: 300px;
-             object-fit: cover;
-         }
-        .desc {
-             padding: 15px;
-             text-align: center;
-        }
+             padding: 0;
+            }
+        } 
     </style>
      <div class="row">
          <div class="leftcolumn">
             <div class="navbar">
-                <h1>Minyoung Huh</h1>
-                <p><button class="navbar"><a href="https://mhuh1004.github.io/home"> <u>.// HOME</u></a></button></p>
+                <a href="https://mhuh1004.github.io/home"><img src="header.png"></a>
+                <p><button class="navbar"><a href="https://mhuh1004.github.io/home"> <u> ☆ HOME</u></a></button></p>
                 <p><div class="dropdown">
-                   <button class="dropbtn"><a href="https://mhuh1004.github.io/works"><u>.// WORKS</u></a></button>
+                   <button class="dropbtn"><a href="https://mhuh1004.github.io/works"><u> ☆ WORKS</u></a></button>
                    <div class="dropdown-content">
-                     <a href="https://mhuh1004.github.io/projects">.projects</a>
-                     <a href="https://mhuh1004.github.io/artdesign">.art/designs</a>
-                     <a href="https://mhuh1004.github.io/event-posters">.event posters</a>
+                     <a href="https://mhuh1004.github.io/projects"> projects</a>
+                     <a href="https://mhuh1004.github.io/artdesign"> art/designs</a>
+                     <a href="https://mhuh1004.github.io/event-posters"> event posters</a>
+               </p>
                    </div>
                  </div>
                 </p>
-                <p><button class="navbar"><a href="https://mhuh1004.github.io/inspo"> <u> .// INSPO</u></a></button></p>
+                <p> <button class="navbar"><a href="https://mhuh1004.github.io/inspo"> <u>  ☆ INSPO</u></a></button></p>
             </div>
          </div>
          <div class="rightcolumn">
@@ -176,7 +174,7 @@
                  <br></br>
                  </p>
 
-                 <iframe src="ideas 215.pdf" width="800px" height="500px">
+                 <iframe src="ideas 215.pdf" width="600px" height="400px">
                 </iframe>
                 <p>
                     <br></br>
