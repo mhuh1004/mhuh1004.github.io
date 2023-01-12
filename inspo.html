@@ -16,67 +16,70 @@
 </head>
 <body>
     <style>
-       /* Create two unequal columns that floats next to each other */
-        /* left column */
-        .leftcolumn {
+            /* Create two unequal columns that floats next to each other */
+    /* left column */
+    .leftcolumn {
              float:left;
              width: 30%;
-             padding-left: 20px;
+        }
+        .leftcolumn img {
+            width: 300px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            margin-left: 5px;
         }
        /* right column */
         .rightcolumn {  
              float:left;
              width: 70%;
-             padding-left: 100px;
-             padding-right: 200px;
-             text-align: left;
+             padding-left: 200px;
+             padding-right: 100px;
+             text-align: center;
         }
         .rightcolumn h1{
             color: rgb(0, 0, 0);
             font-family: Kosugi Maru;
-            font-size: 60px;
-            text-align: left;
+            font-size: 40px;
+            opacity: 1;
+            text-align: center;
         }
         .rightcolumn h2{
             color: rgb(0, 0, 0);
             font-family: Kosugi Maru;
-            font-size: 30px;
-            text-align: left;
+            font-size: 20px;
+            opacity: 1;
+            text-align: center;
         }
         .rightcolumn p{
             color: rgb(0, 0, 0);
             font-family: Kosugi Maru;
-            font-size: 20px;
-            text-align: left;
+            font-size: 15px;
+            opacity: 1;
+            text-align: center;
         }
-        /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-        @media screen and (max-width: 800px) {
-         .leftcolumn, .rightcolumn {   
-             width: 100%;
-             padding: 0;
-            }
-        }
+
      /* navbar */
-        .navbar {
+     .navbar {
              background-color: #04aa6d00;
              color: black;
              font-family: Kosugi Maru;
              font-size: 20px;
              border: none;
+             padding-left: 80px;
         }
         .navbar h1{
             color: rgb(0, 0, 0);
             font-family: Kosugi Maru;
-            font-size: 60px;
+            font-size: 30px;
             opacity: 1;
-            text-align: left;
+            text-align: center;
         }
         .navbar h2{
             color: rgb(0, 0, 0);
             font-family: Kosugi Maru;
             font-size: 30px;
             opacity: 1;
-            text-align: left;
+            text-align: center;
         }
         .navbar a{
             color: rgb(0, 0, 0);
@@ -96,6 +99,7 @@
              font-family: Kosugi Maru;
              font-size: 20px;
              border: none;
+             margin-left: 73px;
         }
         .dropdown {
              position: relative;
@@ -107,6 +111,7 @@
              background-color: #abff91;
              min-width: 160px;
              z-index: 1;
+             margin-left: 70px;
         }
         .dropdown-content a {
              color: rgb(255, 0, 149);
@@ -122,89 +127,86 @@
          .dropdown:hover .dropbtn {background-color:rgb(255, 0, 149);}
          .dropbtn a:hover {
              color: rgb(255, 255, 255);
-         } 
-    /*gallery*/
-         .gallery {
-             margin: 5px;
-             border: 1px solid rgb(0, 199, 7);
+         }   
+   /*gallery*/
+        .gallery {
+             margin: 10px;
+             border: 1px solid rgb(255, 0, 149);
              float: left;
-             width: 100px;
+             width: 30%;
         }
         .gallery img {
              width: 100%;
-             height: 100px;
+             height: 200px;
              object-fit: cover;
          }
-        .desc h1{
-            padding-top: 10px;
-            padding-bottom: 0;
-            margin-bottom: 0;
-            text-align: center;
-            font-size: 20px;
-        }
-        .desc p{
-            padding-top: 5px;
-            margin-top: 0;
-            padding-left: 10px;
-            padding-right: 10px;
-            text-align: center;
+        .desc {
+             padding: 7px;
+             text-align: center;
         }
         .gallery:hover { 
             color:white;
-            background-color:rgb(255, 113, 210);
+            background-color:rgb(255, 0, 149);
         }
-    
+           /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+           @media screen and (max-width: 800px) {
+         .leftcolumn, .rightcolumn {   
+             width: 100%;
+             padding: 0;
+            }
+        } 
     </style>
      <div class="row">
          <div class="leftcolumn">
-             <div class="navbar">
-                 <h1>Minyoung Huh</h1>
-                 <p><button class="navbar"><a href="https://mhuh1004.github.io/home"> <u>.// HOME</u></a></button></p>
-                 <p><div class="dropdown">
-                    <button class="dropbtn"><a href="https://mhuh1004.github.io/works"><u>.// WORKS</u></a></button>
-                    <div class="dropdown-content">
-                      <a href="https://mhuh1004.github.io/projects">.projects</a>
-                      <a href="https://mhuh1004.github.io/artdesign">.art/designs</a>
-                      <a href="https://mhuh1004.github.io/event-posters">.event posters</a>
-                    </div>
-                  </div>
-                 </p>
-                 <p><button class="navbar"><a href="https://mhuh1004.github.io/inspo"> <u> .// INSPO</u></a></button></p>
-             </div>
+            <div class="navbar">
+                <a href="https://mhuh1004.github.io/home"><img src="header.png"></a>
+                <p><button class="navbar"><a href="https://mhuh1004.github.io/home"> <u> ☆ HOME</u></a></button></p>
+                <p><div class="dropdown">
+                   <button class="dropbtn"><a href="https://mhuh1004.github.io/works"><u> ☆ WORKS</u></a></button>
+                   <div class="dropdown-content">
+                     <a href="https://mhuh1004.github.io/projects"> projects</a>
+                     <a href="https://mhuh1004.github.io/artdesign"> art/designs</a>
+                     <a href="https://mhuh1004.github.io/event-posters"> event posters</a>
+               </p>
+                   </div>
+                 </div>
+                </p>
+                <p> <button class="navbar"><a href="https://mhuh1004.github.io/inspo"> <u>  ☆ INSPO</u></a></button></p>
+            </div>
          </div>
          <div class="rightcolumn">
-            <h1>my inspirations</h1>
+            <h1>my inspirations ( ˘⌣˘)♡(˘⌣˘ )</h1>
             <h2>i am so lucky to be surrounded by many wonderful + creative friends who inspire me on a daily basis. i have linked some of them below! </h2>
             <h2>additionally linked are pieces of media and other artists that inspire me and my art.</h2>
             <div class="gallery">
                 <a target="_blank" href="https://www.instagram.com/minahuhnodrawing/">
                     <img src="mina.png";></a>
                 </a>
-                <div class="desc"> <h1>MINA HUH</h1> <p>my older sibling's art, stick and pokes and work !!</p>  </div>
+                <div class="desc"> MINA HUH </div>
             </div>
             <div class="gallery">
                 <a target="_blank" href="https://www.instagram.com/nataliehorberg/">
                     <img src="natalie.JPG";></a>
                 </a>
-                <div class="desc"> <h1>NATALIE HORBERG</h1> <p>my friend natalie's art and other creative projects !!</p></div>
+                <div class="desc"> NATALIE HORBERG </div>
             </div>
             <div class="gallery">
                 <a target="_blank" href="https://www.instagram.com/janezzzart/">
                     <img src="jane.png";></a>
                 </a>
-                <div class="desc"> <h1>JANE LILLARD</h1> <p>my friend jane's art, make up looks, and music!!</p></div>
+                <div class="desc"> JANE LILLARD </div>
             </div>
             <div class="gallery">
                 <a target="_blank" href="https://www.instagram.com/voritica/">
                     <img src="victoria.png";></a>
                 </a>
-                <div class="desc"> <h1>VORITICA</h1> <p>my friend victoria's beautiful crochet line!!</p></div>
+                <div class="desc"> VORITICA</div>
             </div>
             <div class="gallery">
                 <a target="_blank" href="https://abbiabraham.com/">
                     <img src="abbi.png";></a>
                 </a>
-                <div class="desc"> <h1>ABBI ABRAHAM</h1> <p>my friend abbi's amazing photos and film projects!! </p></div>
+                <div class="desc"> ABBI ABRAHAM</div>
             </div>
         </div>
     </body>
