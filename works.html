@@ -21,28 +21,32 @@
         .leftcolumn {
              float:left;
              width: 30%;
-             padding-left: 20px;
+        }
+        .leftcolumn img {
+            width: 300px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            margin-left: 5px;
         }
        /* right column */
         .rightcolumn {  
              float:left;
              width: 70%;
-             padding-left: 100px;
-             padding-right: 200px;
+             padding-left: 200px;
+             padding-right: 100px;
              text-align: center;
         }
         .rightcolumn h1{
             color: rgb(0, 0, 0);
             font-family: Kosugi Maru;
-            font-size: 60px;
+            font-size: 40px;
             opacity: 1;
             text-align: left;
-            column-span: all;
         }
         .rightcolumn h2{
             color: rgb(0, 0, 0);
             font-family: Kosugi Maru;
-            font-size: 30px;
+            font-size: 10px;
             opacity: 1;
             text-align: center;
         }
@@ -53,56 +57,29 @@
             opacity: 1;
             text-align: center;
         }
-    /*gallery*/
-        .gallery {
-             margin: 5px;
-             border: 1px solid rgb(255, 0, 179);
-             float: left;
-             width: 300px;
-        }
-        .gallery img {
-             width: 100%;
-             height: 300px;
-             object-fit: cover;
-         }
-        .desc {
-             padding: 15px;
-             text-align: center;
-        }
-        .gallery:hover { 
-            color:white;
-            background-color:rgb(255, 0, 179);
-        }
 
-
-        /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-        @media screen and (max-width: 800px) {
-         .leftcolumn, .rightcolumn {   
-             width: 100%;
-             padding: 0;
-            }
-        }
      /* navbar */
-        .navbar {
+     .navbar {
              background-color: #04aa6d00;
              color: black;
              font-family: Kosugi Maru;
              font-size: 20px;
              border: none;
+             padding-left: 80px;
         }
         .navbar h1{
             color: rgb(0, 0, 0);
             font-family: Kosugi Maru;
             font-size: 60px;
             opacity: 1;
-            text-align: left;
+            text-align: center;
         }
         .navbar h2{
             color: rgb(0, 0, 0);
             font-family: Kosugi Maru;
             font-size: 30px;
             opacity: 1;
-            text-align: left;
+            text-align: center;
         }
         .navbar a{
             color: rgb(0, 0, 0);
@@ -122,6 +99,7 @@
              font-family: Kosugi Maru;
              font-size: 20px;
              border: none;
+             margin-left: 73px;
         }
         .dropdown {
              position: relative;
@@ -133,6 +111,7 @@
              background-color: #abff91;
              min-width: 160px;
              z-index: 1;
+             margin-left: 70px;
         }
         .dropdown-content a {
              color: rgb(255, 0, 149);
@@ -149,44 +128,72 @@
          .dropbtn a:hover {
              color: rgb(255, 255, 255);
          }   
+    /*gallery*/
+        .gallery {
+             margin: 5px;
+             border: 1px solid rgb(255, 0, 179);
+             float: left;
+             width: 200px;
+        }
+        .gallery img {
+             width: 100%;
+             height: 200px;
+             object-fit: cover;
+         }
+        .desc {
+             padding: 10px;
+             text-align: center;
+        }
+        .gallery:hover { 
+            color:white;
+            background-color:rgb(255, 0, 179);
+        }
+        /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 800px) {
+         .leftcolumn, .rightcolumn {   
+             width: 100%;
+             padding: 0;
+            }
+        }  
     </style>
      <div class="row">
          <div class="leftcolumn">
             <div class="navbar">
-                <h1>Minyoung Huh</h1>
-                <p><button class="navbar"><a href="https://mhuh1004.github.io/home"> <u>.// HOME</u></a></button></p>
-                <p><div class="dropdown">
-                   <button class="dropbtn"><a href="https://mhuh1004.github.io/works"><u>.// WORKS</u></a></button>
-                   <div class="dropdown-content">
-                     <a href="https://mhuh1004.github.io/projects">.projects</a>
-                     <a href="https://mhuh1004.github.io/artdesign">.art/designs</a>
-                     <a href="https://mhuh1004.github.io/event-posters">.event posters</a>
-                   </div>
-                 </div>
+                 <a href="https://mhuh1004.github.io/home"><img src="header.png"></a>
+                 <p><button class="navbar"><a href="https://mhuh1004.github.io/home"> <u> ☆ HOME</u></a></button></p>
+                 <p><div class="dropdown">
+                    <button class="dropbtn"><a href="https://mhuh1004.github.io/works"><u> ☆ WORKS</u></a></button>
+                    <div class="dropdown-content">
+                      <a href="https://mhuh1004.github.io/projects"> projects</a>
+                      <a href="https://mhuh1004.github.io/artdesign"> art/designs</a>
+                      <a href="https://mhuh1004.github.io/event-posters"> event posters</a>
                 </p>
-                <p><button class="navbar"><a href="https://mhuh1004.github.io/inspo"> <u> .// INSPO</u></a></button></p>
-            </div>
+                    </div>
+                  </div>
+                 </p>
+                 <p> <button class="navbar"><a href="https://mhuh1004.github.io/inspo"> <u>  ☆ INSPO</u></a></button></p>
+             </div>
          </div>
          <div class="rightcolumn">
-            <h1> works </h1>
-                <div class="gallery">
+            <h1> works 	(´｡• ᵕ •｡`) ♡ </h1>
+            <div class="gallery">
                     <a target="_blank" href="projects.png">
                         <a href="https://mhuh1004.github.io/projects"><img src="projects.png"></a>
                     </a>
                     <div class="desc">projects</div>
-                 </div>
-               <div class="gallery">
+            </div>
+            <div class="gallery">
                 <a target="_blank" href="art2.JPG">
                     <a href="https://mhuh1004.github.io/artdesign"><img src="art2.JPG"></a>
                 </a>
                 <div class="desc"> designs/artwork </div>
-              </div>
+            </div>
             <div class="gallery">
                 <a target="_blank" href="poster1.jpg">
                     <a href="https://mhuh1004.github.io/event-posters"><img src="poster1.jpg"></a>
                 </a>
                 <div class="desc"> event posters </div>
-              </div>
+         </div>
         </div>
     </div>
 </body>
